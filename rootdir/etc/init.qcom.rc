@@ -1384,3 +1384,8 @@ on  property:vendor.camera.cpuperf.en=1
 	write /dev/stune/foreground/schedtune.prefer_idle 1
 on  property:vendor.camera.cpuperf.en=0
 	write /dev/stune/foreground/schedtune.prefer_idle 0
+
+service vendor.goodix_script /vendor/bin/init.goodix.sh
+    class late_start
+    user root
+    oneshot
