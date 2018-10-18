@@ -68,6 +68,9 @@
         <item>"softap0"</item>
     </string-array>
 
+    <!-- Whether device ignores the RSSNR signal implementation -->
+    <bool name="config_ignoreRssnrSignalLevel">true</bool>
+
     <!-- Dhcp range (min, max) to use for tethering purposes -->
     <!-- USB is  192.168.42.1 and 255.255.255.0
          Wifi is 192.168.43.1 and 255.255.255.0
