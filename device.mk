@@ -7,8 +7,10 @@
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/lavender/lavender-vendor.mk)
 
-# Setup dalvik vm configs
-$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
+# VM Configs
+$(call inherit-product, vendor/extras/configs/phone-xxhdpi-4096-dalvik-heap.mk)
+
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 -include $(LOCAL_PATH)/vendor_prop.mk
 
