@@ -1549,7 +1549,7 @@ vendor/lib/libAlacSwDec.so|d082d6eeedd8a84bd1b720d515ede48e74392dd4
 vendor/lib/libApeSwDec.so|12c5bfd798a14114a58e55c0713e8e238ccbb83f
 vendor/lib/libdsd2pcm.so|5d8b4ff5930ad3561df396a7edf636344c184fb9
 vendor/lib/libFlacSwDec.so|ad62260c534b60df028f5c5741086592aad7e220
--vendor/lib/libgpustats.so|86d0490b5ccdbeeba64c4f06a9f1503d01eaeabc
+vendor/lib/libgpustats.so|86d0490b5ccdbeeba64c4f06a9f1503d01eaeabc
 vendor/lib/libI420colorconvert.so|3aa40a7c120ddd7850c98f20e312fc67cec34507
 vendor/lib/libmm-color-convertor.so|650a2ac25ff610a9472d145d82ffbf7fb00bd17b
 vendor/lib/libmmosal_proprietary.so|ef5b82a40427a71a98ab3bc95b72299f8d971141
@@ -1567,7 +1567,7 @@ vendor/lib/libOmxQcelp13Dec.so|7b68992a36e0c6e0bdc288359bdb8f950cec34ef
 vendor/lib/libOmxVideoDSMode.so|780eab173912246281f28b039af510c221697b8f
 vendor/lib/libOmxWmaDec.so|e1f2c2ed81495296f7c0146be5bf0e2530e44317
 vendor/lib/libvqzip.so|a0382fe0e0300f050381e5acf6f90184c7ad3b6e
--vendor/lib64/libgpustats.so|dd2ecc6c5ef439a8d427a52ab9d153f8e747deff
+vendor/lib64/libgpustats.so|dd2ecc6c5ef439a8d427a52ab9d153f8e747deff
 
 # Mlipay
 vendor/bin/mlipayd@1.1
