@@ -126,6 +126,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.cpurend.vsync=false \
     debug.sf.latch_unsignaled=0 \
     debug.sf.enable_hwc_vds=1 \
     ro.opengles.version=196610 \
