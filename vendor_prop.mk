@@ -99,7 +99,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi,com.longcheertel.cit \
     persist.vendor.camera.privapp.list=org.codeaurora.snapcam \
     persist.camera.privapp.list=org.codeaurora.snapcam \
-    persist.vendor.camera.HAL3.enabled=1
+    persist.vendor.camera.HAL3.enabled=1 \
+    persist.vendor.camera.eis.enable=1 \
+    persist.vendor.camera.ois.disable=1 \
+    persist.vendor.camera.is_type=4
 
 # Camera Lavender Specific
 PRODUCT_PROPERTY_OVERRIDES += \
