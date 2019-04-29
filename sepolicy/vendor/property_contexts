@@ -30,6 +30,10 @@ ro.vendor.ram.size                      u:object_r:vendor_ram_prop:s0
 # Media
 gpu.stats.debug.level                   u:object_r:vendor_default_prop:s0
 
+# Google camera hal read only props
+ro.camera.                               u:object_r:camera_ro_prop:s0
+ro.vendor.camera.                        u:object_r:camera_ro_prop:s0
+
 # Mlipay
 persist.vendor.sys.pay.                 u:object_r:mlipay_prop:s0
 persist.vendor.sys.provision.status     u:object_r:mlipay_prop:s0
