@@ -182,6 +182,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=libqti-perfd-client.so
 
+# Radio IMS
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.radio.aosp_usr_pref_sel=true
+
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.volte_avail_ovr=1 \
