@@ -165,7 +165,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.vidc.dec.enable.downscalar=1 \
     vendor.mm.enable.qcom_parser=13631487 \
     mmp.enable.3g2=true \
-    mm.enable.smoothstreaming=true \
+    mm.enable.sec.smoothstreaming=true \
     vidc.enc.dcvs.extra-buff-count=2
 
 # Memory optimizations
