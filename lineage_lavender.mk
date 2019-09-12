@@ -28,7 +28,7 @@ PRODUCT_MODEL := Redmi Note 7
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE="lavender" \
-    PRODUCT_NAME="lavender"
+    PRODUCT_DEVICE=lavender \
+    PRODUCT_NAME=lavender
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
