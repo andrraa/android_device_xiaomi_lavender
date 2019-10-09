@@ -275,3 +275,7 @@ debug.hwui.renderer=skiavk
 # disable PQ feature by default
 PRODUCT_PROPERTY_OVERRIDES += \
 	vendor.vidc.enc.disable.pq=true
+
+# Rescue Party
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.disable_rescue=true
