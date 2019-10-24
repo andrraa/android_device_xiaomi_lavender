@@ -256,6 +256,11 @@ PRODUCT_PACKAGES += \
     libsensorndkbridge \
     libvehiclenetwork-native
 
+# Google Assistant + ANGLE
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.opa.eligible_device=true \
+    ro.gfx.angle.supported=true
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \
