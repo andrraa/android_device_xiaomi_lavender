@@ -10,8 +10,6 @@ $(call inherit-product, vendor/xiaomi/lavender/lavender-vendor.mk)
 # VM Configs
 $(call inherit-product, vendor/extras/configs/phone-xxhdpi-4096-dalvik-heap.mk)
 
-PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
-
 -include $(LOCAL_PATH)/vendor_prop.mk
 
 PRODUCT_CHARACTERISTICS := nosdcard
