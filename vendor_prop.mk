@@ -102,7 +102,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.HAL3.enabled=1 \
     persist.vendor.camera.eis.enable=1 \
     persist.vendor.camera.ois.disable=1 \
-    persist.vendor.camera.is_type=4
+    persist.vendor.camera.is_type=4 \
+    persist.vendor.camera.dual.isp.sync=0 \
+    persist.vendor.camera.isp.dualisp=1
 
 # Camera Lavender Specific
 PRODUCT_PROPERTY_OVERRIDES += \
