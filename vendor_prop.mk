@@ -267,6 +267,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 persist.sys.job_delay=true \
 persist.sys.mcd_config_file=/system/etc/mcd_default.conf \
 persist.vendor.qcomsysd.enabled=1 \
+persist.vendor.delta_time.enable=true \
 keyguard.no_require_sim=true \
 ro.com.android.dataroaming=false \
 persist.backup.ntpServer=0.pool.ntp.org \
