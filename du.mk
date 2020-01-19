@@ -20,6 +20,9 @@ $(call inherit-product, vendor/du/config/common_full_phone.mk)
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Pixel Gapps
+$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := du_lavender
 PRODUCT_DEVICE := lavender
