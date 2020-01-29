@@ -94,9 +94,6 @@ BOARD_USES_QCNE := true
 # Compile libhwui in performance mode
 HWUI_COMPILE_FOR_PERF := true
 
-# Crypto
-TARGET_HW_DISK_ENCRYPTION := true
-
 # Display
 TARGET_SCREEN_DENSITY := 410
 TARGET_USES_GRALLOC1 := true
