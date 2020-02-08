@@ -31,11 +31,12 @@
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
 
+#include <android-base/logging.h>
 #include <android-base/properties.h>
 #include "property_service.h"
-#include "vendor_init.h"
 
-using android::init::property_set;
+namespace android {
+namespace init {
 
 void property_override(char const prop[], char const value[])
 {
@@ -60,4 +61,6 @@ void vendor_load_properties()
     // fingerprint
     property_override("ro.build.description", "coral-user 10 QQ2A.200501.001.B2 6352890 release-keys");
     property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ2A.200501.001.B2/6352890:user/release-keys");
+}
+}
 }
