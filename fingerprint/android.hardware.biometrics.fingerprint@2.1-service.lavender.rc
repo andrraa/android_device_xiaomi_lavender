@@ -6,10 +6,3 @@ service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.
     user system
     group system input uhid
     writepid /dev/cpuset/system-background/tasks
-
-on post-fs-data
-	mkdir /data/vendor/goodix 0770 system system
-	mkdir /data/vendor/fpc 0770 system system
-	copy /data/vendor/fpc/user.db /data/vendor_de/0/fpdata/user.db
-	chown system system /data/vendor_de/0/fpdata/user.db
-	rm /data/vendor/fpc/user.db

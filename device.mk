@@ -428,9 +428,10 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.qcom.sensors.sh \
     init.target.rc \
+    init.safailnet.rc \
+    init.xiaomi.rc \
     ueventd.qcom.rc \
-    fstab.qcom \
-    init.safailnet.rc
+    fstab.qcom
 
 # RCS
 PRODUCT_PACKAGES += \
