@@ -659,4 +659,8 @@
     <!-- Whether or not we should show vendor mismatch message -->
     <bool name="config_show_vendor_mismatch_message">false</bool>
 
+    <!-- Whether or not to hide the navigation bar when the soft keyboard is visible in order to
+         create additional screen real estate outside beyond the keyboard. Note that the user needs
+         to have a confirmed way to dismiss the keyboard when desired. -->
+    <bool name="config_automotiveHideNavBarForKeyboard">true</bool>
 </resources>
