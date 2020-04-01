@@ -264,10 +264,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.opa.eligible_device=true \
     ro.gfx.angle.supported=true
 
-PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.0-impl-qti \
-    android.hardware.gnss@2.0-service-qti
-
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \

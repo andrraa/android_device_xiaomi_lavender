@@ -67,10 +67,13 @@ on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 	chown 0660 /sys/class/leds/red/brightness
 	chown 0660 /sys/class/leds/red/blink
-        chmod 0222 /sys/kernel/debug/tracing/trace_marker
     chown system system /sys/class/leds/red/brightness
 	chown system system /sys/class/leds/red/blink
     chown system system /sys/class/leds/red/duty_pcts
+
+    # Allow writing to the kernel trace log.
+    chmod 0222 /sys/kernel/debug/tracing/trace_marker
+    mount none /dev/null /vendor/etc/acdbdata/QRD* bind
 
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
