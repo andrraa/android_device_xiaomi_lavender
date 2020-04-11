@@ -269,7 +269,8 @@ ro.build.shutdown_timeout=0 \
 vendor.fm.a2dp.conc.disabled=true \
 ro.vendor.audio.soundtrigger=none \
 ro.vendor.audio.soundtrigger.lowpower=false \
-ro.vendor.audio.voice.volume.boost=manual
+ro.vendor.audio.voice.volume.boost=manual \
+debug.hwui.renderer=skiavk
 
 # disable PQ feature by default
 PRODUCT_PROPERTY_OVERRIDES += \
