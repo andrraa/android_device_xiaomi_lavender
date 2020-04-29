@@ -177,7 +177,8 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libqdMetaData.system \
     liboverlay \
-    libtinyxml
+    libtinyxml \
+    memtrack.sdm660
 
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
@@ -188,7 +189,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service
-	
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
