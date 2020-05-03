@@ -13,5 +13,3 @@ type keylayout_file, file_type, vendor_file_type;
 
 # Keylayout
 type vendor_keylayout_file, file_type, vendor_file_type;
-
-type debugfs_wlan, debugfs_type, fs_type;
