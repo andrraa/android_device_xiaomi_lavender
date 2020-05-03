@@ -115,7 +115,7 @@ static inline uint32_t scaleBrightness(uint32_t brightness, uint32_t maxBrightne
         return 0;
     }
 
-    return (brightness - 1) * (maxBrightness - 1) / (0xFF - 1) + 1;
+    return brightness * maxBrightness / 0xFF;
 }
 
 static inline uint32_t getScaledBrightness(const LightState& state, uint32_t maxBrightness) {
