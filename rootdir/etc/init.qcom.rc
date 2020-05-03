@@ -438,15 +438,9 @@ on post-fs-data
     mkdir /data/vendor/swap 0770 root system
     chmod 2770 /data/vendor/swap
 
-    # set aggressive read ahead for during boot up
-    write /sys/block/dm-0/queue/read_ahead_kb 128
-    write /sys/block/dm-1/queue/read_ahead_kb 128
-    write /sys/block/dm-1/queue/read_ahead_kb 128
-    write /sys/block/dm-2/queue/read_ahead_kb 128
-    write /sys/block/dm-3/queue/read_ahead_kb 128
-    write /sys/block/dm-4/queue/read_ahead_kb 128
-    write /sys/block/dm-5/queue/read_ahead_kb 128
-    write /sys/block/dm-6/queue/read_ahead_kb 128
+    # set aggressive read ahead for dm-0 and dm-1 during boot up
+    write /sys/block/dm-0/queue/read_ahead_kb 2048
+    write /sys/block/dm-1/queue/read_ahead_kb 2048
 
     # Create vpp directory
     mkdir /data/vendor/vpp 0770 media media
@@ -528,10 +522,15 @@ on property:persist.vendor.ssr.enable_ramdumps=0
 
 on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed "
-    #Reset read ahead for dm-0, dm-1 and dm-2 to 512kb
-    write /sys/block/dm-0/queue/read_ahead_kb 512
-    write /sys/block/dm-1/queue/read_ahead_kb 512
-    write /sys/block/dm-2/queue/read_ahead_kb 512
+    #Reset read ahead for dm-0, dm-1, dm-2, dm-3, dm-4, dm-5, dm-6, to 128kb
+    write /sys/block/dm-0/queue/read_ahead_kb 128
+    write /sys/block/dm-1/queue/read_ahead_kb 128
+    write /sys/block/dm-2/queue/read_ahead_kb 128
+    write /sys/block/dm-3/queue/read_ahead_kb 128
+    write /sys/block/dm-4/queue/read_ahead_kb 128
+    write /sys/block/dm-5/queue/read_ahead_kb 128
+    write /sys/block/dm-6/queue/read_ahead_kb 128
+
     #WDSP FW boot sysfs node used by STHAL
     chown media audio /sys/kernel/wdsp0/boot
     chown media audio /sys/kernel/wcd_cpe0/fw_name
