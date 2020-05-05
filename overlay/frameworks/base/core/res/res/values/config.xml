@@ -671,4 +671,8 @@
 
     <!-- Define that we use a higher screen ratio (18:9) than standard (16:9) -->
     <bool name="config_haveHigherAspectRatioScreen">true</bool>
+
+    <!-- Whether device has a notch -->
+    <bool name="config_haveNotch">true</bool>
+
 </resources>
