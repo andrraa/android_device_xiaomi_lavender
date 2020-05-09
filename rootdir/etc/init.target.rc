@@ -77,7 +77,7 @@ on post-fs-data
     mkdir /data/tombstones/lpass 0771 system system
     mkdir /data/tombstones/wcnss 0771 system system
     mkdir /data/tombstones/dsps 0771 system system
-    mkdir /data/vendor/hbtp 0750 system system
+
     mkdir /data/vendor/mac_addr 0770 system wifi
 
     mkdir /data/vendor/thermal 0771 root system
