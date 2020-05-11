@@ -542,3 +542,8 @@ PRODUCT_PACKAGES += \
 	libnl \
 	libaacwrapper \
 	libwfdaac
+
+# XiaomiParts && XiaomiDoze
+PRODUCT_PACKAGES += \
+   XiaomiParts \
+   XiaomiDoze
