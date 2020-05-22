@@ -36,7 +36,6 @@ persist.vendor.sys.provision.status     u:object_r:mlipay_prop:s0
 
 # RIL
 ro.build.software.version               u:object_r:exported_radio_prop:s0
-ro.fota.oem                             u:object_r:exported_radio_prop:s0
 ro.miui.                                u:object_r:exported_radio_prop:s0
 ro.product.mod_device                   u:object_r:exported_radio_prop:s0
 
@@ -51,5 +50,3 @@ wifi.active.interface                   u:object_r:wifi_prop:s0
 # Dirac
 persist.audio.dirac.                    u:object_r:dirac_prop:s0
 
-# USB
-/(vendor|system/vendor)/bin/hw/android\.hardware\.usb@1\.0-service\.lavender       u:object_r:hal_usb_default_exec:s0
