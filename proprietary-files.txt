@@ -1615,6 +1615,12 @@ vendor/lib64/vendor.display.color@1.1.so|d2dfc3fff6aaf7989110ebe05af154186e53501
 vendor/lib64/vendor.display.color@1.2.so|7b967425caa1205e331484e1e1484ac3bd355067
 vendor/lib64/vendor.display.postproc@1.0.so|c9c96ff50b6ff8989fac9fdf35d282a996ea477a
 
+# Qdutils
+vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
+vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
+vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
+vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
+
 # QMI - from LA.UM.8.2.r1-06500-sdm660.0
 product/lib/libdiag_system.so|2f3c04bf934f1b3466ab2b2a822c7f6262cab0cb
 etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
@@ -1873,7 +1879,7 @@ lib/libwfdservice.so|52c6878deaf004950e3dafe6b2a9303eeb4df071
 lib/libwfdsm.so|54a641a98a5b358ce0cd56b1c5a2798704658f18
 lib/libwfduibcinterface.so|91a3d55861725aef0747c14809c1bd547485de66
 lib/libwfduibcsink.so|b8ef4abf2c67cf5e9f187b71cda4195171bb15ed
-	lib/libwfduibcsinkinterface.so|dbe5c8f89a37b1d2d27bc3224695b97cfc5a71e3
+lib/libwfduibcsinkinterface.so|dbe5c8f89a37b1d2d27bc3224695b97cfc5a71e3
 lib/libwfduibcsrc.so|58d43f5593a7c0a6929c0ed3aef02386fbc0afc8
 lib/libwfduibcsrcinterface.so|4eba1e3a541bc433eb75cf74807591fd16618c74
 lib64/libwfdclient.so|90e3f8c60361c353919743a6e362c3115861fb53
