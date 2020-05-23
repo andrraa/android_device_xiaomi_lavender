@@ -1824,19 +1824,16 @@ vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|1f27eb012650705a40fac8fec6d0b2dd10a1ec22
 vendor/lib64/vendor.qti.hardware.soter@1.0.so|b08f0d2e92e0adce42127b5f978fa6bb22326ce1
 
-# Thermal - from lavender-user 10 QKQ1.190910.002 20.1.9 release-keys
-vendor/etc/thermal-engine-camera.conf|db9829a655ca0c3013448e6a4aee3fcce9f90ca2
-vendor/etc/thermal-engine-map.conf|19c9ec67a63568470061413e47d420321040ef2a
-vendor/etc/thermal-engine-normal.conf|f44b43de8ec730aed99e289be99c7fc814da5e94
-vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
-vendor/lib/libthermalfeature.so|1f1eb616ba26b309a2fda7de40c2163a4acaaa35
-vendor/lib64/libthermalfeature.so|829b2fc0aa8c863d4b4b331e0a2c00663e01efe6
-
-# Thermal - from LA.UM.8.2.r1-06200-sdm660.0
-vendor/bin/thermal-engine|fc23647cf4ccf8f056477ecbb29169c35627b95a
--vendor/lib/libthermalclient.so|34b6ee056ae8a6df578fc243f8acd3567a49d97b
--vendor/lib64/libthermalclient.so|20f1fd238fc81bf1c6828ec416121c0ef66e0df1
-vendor/lib64/libthermalioctl.so|e1844c66a556946b45bcb6c2e747460aa5201770
+# Thermal Configs - lavender 11.0.5.0
+vendor/bin/thermal-engine
+-vendor/lib/libthermalclient.so
+-vendor/lib64/libthermalclient.so
+vendor/lib64/libthermalfeature.so
+vendor/lib64/libthermalioctl.so
+vendor/etc/thermal-engine-camera.conf
+vendor/etc/thermal-engine-map.conf
+vendor/etc/thermal-engine-normal.conf
+vendor/etc/thermal-engine.conf
 
 # Time services - from LA.UM.8.2.r1-06500-sdm660.0
 -vendor/app/TimeService/TimeService.apk|c935b678fdaed033513f044f6492361c3370f9f0
@@ -1844,7 +1841,6 @@ vendor/bin/time_daemon|a3efd58d57f23d0f8e7cfe8da0d7887b2f3e48e8
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 -vendor/lib/libtime_genoff.so|8fecae7eca45921b4562b416bac494188837fd43
 -vendor/lib64/libtime_genoff.so|216cbb72e22a0ca76d766dc0b84055c5b31e0a4c
-
 
 # TUI - from LA.UM.8.2.r1-06500-sdm660.0
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|d4d025e0a12af87f65104fe07801517938733603
@@ -1877,7 +1873,7 @@ lib/libwfdservice.so|52c6878deaf004950e3dafe6b2a9303eeb4df071
 lib/libwfdsm.so|54a641a98a5b358ce0cd56b1c5a2798704658f18
 lib/libwfduibcinterface.so|91a3d55861725aef0747c14809c1bd547485de66
 lib/libwfduibcsink.so|b8ef4abf2c67cf5e9f187b71cda4195171bb15ed
-lib/libwfduibcsinkinterface.so|dbe5c8f89a37b1d2d27bc3224695b97cfc5a71e3
+	lib/libwfduibcsinkinterface.so|dbe5c8f89a37b1d2d27bc3224695b97cfc5a71e3
 lib/libwfduibcsrc.so|58d43f5593a7c0a6929c0ed3aef02386fbc0afc8
 lib/libwfduibcsrcinterface.so|4eba1e3a541bc433eb75cf74807591fd16618c74
 lib64/libwfdclient.so|90e3f8c60361c353919743a6e362c3115861fb53
