@@ -27,6 +27,9 @@ ro.vendor.sensors.pug=true
 #set maximum supported adapter voltage
 persist.chg.max_volt_mv=9000
 
+# Thermal
+sys.thermal.data.path=/data/thermal/
+
 #add for color invert
 ro.vendor.df.effect.conflict=1
 persist.sys.df.extcolor.proc=0
