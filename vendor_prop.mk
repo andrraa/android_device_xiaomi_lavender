@@ -252,6 +252,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true
 
+# Thermal configs path
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.thermal.data.path=/data/vendor/thermal/
+
 # WFD
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1 \
