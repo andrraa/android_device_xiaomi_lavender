@@ -1,5 +1,6 @@
 type ir_dev_file, file_type;
 type sysfs_fingerprint, fs_type, sysfs_type;
+type sysfs_disk_stat, fs_type, sysfs_type;
 type thermal_data_file, file_type, data_file_type;
 
 # XiaomiParts
