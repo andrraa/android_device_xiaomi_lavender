@@ -1,1 +1,1 @@
-ro.product.system.manufacturer u:object_r:exported2_default_prop:s0 exact string
+sys.listeners.registered   u:object_r:vendor_tee_listener_prop:s0

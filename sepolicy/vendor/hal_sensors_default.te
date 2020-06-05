@@ -1,4 +1,2 @@
-set_prop(hal_sensors_default, camera_prop)
-type sound_device, dev_type;
-
-allow hal_sensors_default sound_device:chr_file rw_file_perms;
+allow hal_sensors_default sysfs:file { read open };
+allow hal_sensors_default sysfs_info:file { read write };
