@@ -3,6 +3,8 @@ type mlipay_prop, property_type;
 type vendor_fp_prop, property_type;
 type ifaa_prop, property_type;
 type vendor_camera_prop, property_type;
+type vendor_ssr_prop, property_type;
+type vendor_tee_listener_prop, property_type;
 
 # Thermal engine
 type thermal_engine_prop, property_type;
