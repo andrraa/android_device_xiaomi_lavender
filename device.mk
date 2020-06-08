@@ -14,10 +14,6 @@ $(call inherit-product, vendor/extras/configs/phone-xxhdpi-4096-dalvik-heap.mk)
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
-# OEM Unlock reporting
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.oem_unlock_supported=0
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
