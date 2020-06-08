@@ -125,10 +125,6 @@ DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifests/framework_man
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
-# Vendor init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_lavender
-TARGET_RECOVERY_DEVICE_MODULES := libinit_lavender
-
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_SUPPRESS_SECURE_ERASE := true

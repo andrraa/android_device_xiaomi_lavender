@@ -12,8 +12,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit some common Dirty Unicorns stuff
 $(call inherit-product, vendor/du/config/common_full_phone.mk)
 
-#TARGET_INCLUDE_WIFI_EXT := true
-
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
@@ -29,6 +27,9 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=lavender \
-    PRODUCT_NAME=lavender
+    PRODUCT_NAME=lavender \
+    PRIVATE_BUILD_DESC="coral-user 10 QQ3A.200605.001 6392402 release-keys"
+
+BUILD_FINGERPRINT := "google/coral/coral:10/QQ3A.200605.001/6392402:user/release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
